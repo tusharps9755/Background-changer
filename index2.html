@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background changer</title>
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+        }
+        #violet{
+            background-color: #ce9aff;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae excepturi esse modi corrupti consectetur ipsam ducimus, quo quisquam nobis repudiandae exercitationem maiores nostrum illum sit commodi, quidem aliquam nisi labore autem nesciunt laboriosam, itaque ex officiis. Numquam ullam deserunt nostrum molestiae harum distinctio quas dolor sequi commodi veniam facilis voluptas, quae odit quasi dicta modi, asperiores libero? Voluptatum sit et dolor exercitationem? Ratione voluptatibus tempora non alias esse quod sit vitae, aspernatur eveniet dolores a, nulla molestiae sed consectetur ex cupiditate fugiat iusto. Assumenda error ullam asperiores officia dignissimos laudantium maiores quis debitis autem nostrum ab doloremque voluptates atque quos cumque iusto eligendi nemo distinctio quam, sit non neque quo! Aliquid in voluptatum vel assumenda non explicabo, doloribus voluptate possimus tenetur dolor architecto quidem adipisci magnam nisi cupiditate totam rerum commodi sequi dolorum repudiandae minima. Quos nemo totam, adipisci, enim quasi vel quam tempore vero doloribus voluptate veritatis? Nisi eius, dolore eos suscipit, quasi adipisci veritatis beatae perferendis cum optio necessitatibus ipsam cumque at tempore. Sit alias accusamus, expedita eius, qui velit magni dolorem atque numquam ratione provident dignissimos. Molestias aspernatur dicta perspiciatis debitis placeat nobis necessitatibus, dignissimos commodi magni non ducimus et explicabo! Qui ipsum magnam eum iste, iusto asperiores sapiente velit nihil beatae perspiciatis sunt impedit maxime. Eum expedita, sunt maxime itaque, ipsam consequuntur nobis, iusto dolore quisquam suscipit deleniti? Voluptates tempore nam perspiciatis modi voluptatum aliquam fuga, tenetur necessitatibus veniam eligendi quo similique harum magni aspernatur delectus nihil culpa explicabo, repellendus laboriosam! Dolorem ullam, veniam iusto commodi pariatur nihil odit magni deserunt neque cupiditate itaque dolorum! Libero similique quod laborum modi, voluptatem distinctio fugit et sapiente ipsa necessitatibus architecto doloremque. Veniam voluptates quo, praesentium neque debitis nemo ipsum facilis quae, deleniti asperiores illum dicta vero officiis deserunt. Voluptatum ullam quaerat, voluptates exercitationem esse labore, praesentium unde eos quisquam est repellendus voluptatibus harum iure possimus consequuntur facere obcaecati, iste corporis atque! Nihil officiis id dolores optio quae laudantium error ducimus natus. Inventore, hic repellendus. Consectetur fugiat amet, numquam facilis a expedita ratione sit eaque aperiam cumque, nesciunt eos incidunt. Ipsa unde ipsam animi a aliquam velit rem itaque, praesentium iure ex ea eum non sunt laudantium, sequi accusamus libero aperiam impedit excepturi odit. Dolor, autem sunt, assumenda, blanditiis labore laborum tempore nesciunt ratione voluptatum libero sapiente odio similique voluptate totam porro quae necessitatibus eveniet a quo voluptates soluta. Qui esse at inventore? Nulla unde quibusdam assumenda. Rerum explicabo repellendus quasi iusto earum doloribus ipsa, maiores eius, aut, iste nam. Magni suscipit repudiandae quidem illum eum quis esse at eos doloribus culpa obcaecati, enim quo tempore nihil fuga est consectetur? Veritatis nam consequuntur provident perspiciatis quas tempora ratione error natus. Eligendi ex et dolorum quos quasi eius, labore illo nostrum laborum quam. Molestiae, placeat exercitationem quisquam voluptatibus tempora temporibus consequatur itaque dicta maxime doloremque, unde corrupti. Cum, vel exercitationem laudantium consectetur praesentium alias beatae reiciendis fugit magni porro, et aliquid deleniti architecto blanditiis consequuntur possimus placeat repellendus omnis magnam quia. Impedit atque placeat accusamus a velit fugiat praesentium soluta.
+    </p>
+
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for(let elm of txt){
+                    elm.style.color="white";
+                }
+                
+            }
+            else{
+                for(let elm of txt){
+                    elm.style.color="black";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: yellow;
+            color: red;
+        }
+        .dim{
+            border: 1px solid red;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- How to see classNames -->
+
+    <!-- <div id="box" class="color dim">
+        <p>This is a dummy text!</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        console.log(box.className);
+    </script> -->
+
+    <!-- <div id="box" class="color">
+        <p>This is a dummy text!</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        box.className += " dim";
+    </script> -->
+
+
+    <!-- <div id="box" class="color dim">
+        <p>This is a dummy text !</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        console.log(box.classList);
+    </script> -->
+
+    <!-- Now access class one by one -->
+
+    <!-- <div id="box" class="color dim">
+        <p>This is a dummy text!</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        for(let css of box.classList)
+        {
+            console.log(css);
+        }
+    </script> -->
+
+    <!-- 3rd type of adding class -->
+
+    <!-- <div id="box" class="color">
+        <p>This is dummy text !</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        box.classList.add("dim");
+    </script> -->
+
+    <!-- How to remove class -->
+
+    <!-- <div id="box" class="color">
+        <p>This is dummy text !</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        box.classList.remove("dim");
+    </script> -->
+
+    <!-- How to replace the class -->
+
+    <!-- How to replace class -->
+
+    <!-- <div id="box" class="color">
+        <p>This is dummy text</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        box.classList.replace("color","dim");
+    </script> -->
+
+    <!-- Now check particular will be present or not -->
+
+    <!-- <div id="box" class="color">
+        <p>This is a dommy text</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        // let result=box.classList.contains("dim");False
+
+        let result=box.classList.contains("color");
+        console.log(result);
+    </script> -->
+
+    <!-- Toggles between hide and show for the selected elements -->
+
+    <!-- <div id="box" class="color">
+        <p>This is a dummy text</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        box.classList.toggle("dim");
+    </script> -->
+
+    <!-- They are add new class if we are using toggle -->
+ 
+    <div id="box" class="color dim">
+        <p>This is a dummy</p>
+    </div>
+
+    <script>
+        let box=document.getElementById("box");
+        box.classList.toggle("color");
+    </script>
+
+    <!-- The are deleted color if we are give color inside the toggle function -->
+</body>
+</html>

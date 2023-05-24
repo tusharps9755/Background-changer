@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <img width="500" src="https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80" alt="">
+
+    <script>
+        window.addEventListener('DOMContentLoaded',function(){
+            console.log("DOM tree created");
+        });
+
+        window.addEventListener('load' ,function(){
+            console.log("Fully loaded");
+        });
+    </script> -->
+
+<img id="image1" width="500" src="https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80" alt="">
+
+<script>
+    window.addEventListener('DOMContentLoaded' , function(){
+        console.log("DOM tree created");
+    });
+
+    let img=document.getElementById("image1");
+
+    img.addEventListener('load' , function(){
+        console.log("Fully loaded");
+    });
+</script>
+
+</body>
+</html>
